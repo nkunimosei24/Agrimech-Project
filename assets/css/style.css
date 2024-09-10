@@ -1,0 +1,76 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+nav {
+    background-color:   #314d07;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}   
+
+#nav-items {
+    display: flex;
+    gap: 15px;
+}
+
+.list-item {
+    list-style-type: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 12pt;
+    color: white ;
+}
+
+.hero {
+background-image: url(../images/image\ 26.jpg); 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 70vh;
+padding-top: 50px;
+position: relative;
+opacity: 1;
+
+}
+
+.hero-info {
+    width: 50%;
+    padding-top: 100px;
+    margin-left: 5%;
+    
+}
+
+.hero-info h2{
+    font-size: 42px;
+    color: white;  
+    
+}
+
+.hero-info p {
+  font-size: 20px;
+  color: white; 
+  margin-top: 1.2rem; 
+  
+}
+
+.hero-info button {
+    font-size: 20px;
+    color: white;
+    background-color: #314d07;
+    margin-top: 2rem;
+}
+
+.parrallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+   
+}
+
