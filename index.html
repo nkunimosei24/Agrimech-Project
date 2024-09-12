@@ -7,14 +7,15 @@
     <title>Agriculture</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
 </head>
 
 <body>
-    <header class="hero">
-        <nav>
+    <header>
+        <nav class="nav-section">
             <a href="#"><img id="logo" src="./assets/images/image 30.jpg"></a>
 
 
@@ -36,66 +37,131 @@
             </div>
         </nav>
 
-        <div>
-            <div class="hero-info">
-                <h2>AgriMech</h2>
-                <p>Empowering farmers with digital solutions for modern agriculture.</p>
-                <button>CONTACT</button>
-            </div>
+                <section class="section-images">
+                    <div class="Slides-container gradient-img">
+                        <img class="mySlides" src="./assets/images/image 39.webp" >
+                        <img class="mySlides" src="./assets/images/image 42.jpg" >
+                        <img class="mySlides" src="./assets/images/image 43.jpg" >
+                    </div>
+                        <div class="about-section">
+                            <h2>AgriMech</h2>
+                    <p>Empowering farmers with digital solutions for modern agriculture.</p>
+                    <button>CONTACT</button>
+                        </div>
+                </section>
+                
+            
+                
+        
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
             <!-- <div class="parrallax"></div>  -->
+             
 
-        </div>
+        
 
     </header>
 
-    <section>
-        <div class="image-conatainer">
-            <div class="section-image">
-                <img src="./assets/images/image 24.jpg" alt="image">
-            </div>
-        </div>
-        
-        <div class="image-sector">
-            <div>
-             <img src="./assets/images/image 31.webp" alt="image">
-             <p>Farm Experiences</p>
-            </div>
+    <section class="whole-container">
+        <h1>OUR PRODUCTS</h1>
 
-            <div>
-                <img src="./assets/images/image 33.webp" alt="image">
-                <p>Farm Equipments</p>
-            </div>
 
-            <div>
-                <img src="./assets/images/image 34.webp" alt="image">
-                <p>Organic Foods</p>
-            </div>
-            
-            <div>
-                <img src="./assets/images/image 35.webp" alt="image">
-                <p>Best Services</p>
-            </div>
+        <div class="image-container">
+            <img src="./assets/images/image 42.jpg" alt="image">
+            <img src="./assets/images/image 21.jpg" alt="image">
+            <img src="./assets/images/image 24.jpg" alt="image">
+            <img src="./assets/images/image 26.jpg" alt="image">
+
         </div>
+
+ 
+
+      
+            <div class="image-sector">
+                <div>
+                    <img src="./assets/images/image 31.webp" alt="image">
+                    <p>Farm Experiences</p>
+                </div>
+    
+                <div>
+                    <img src="./assets/images/image 33.webp" alt="image">
+                    <p>Farm Equipments</p>
+                </div>
+    
+                <div>
+                    <img src="./assets/images/image 34.webp" alt="image">
+                    <p>Organic Foods</p>
+                </div>
+    
+                <div>
+                    <img src="./assets/images/image 35.webp" alt="image">
+                    <p>Best Services</p>
+                </div>
+            </div>
+      
+   
+
+
 
         <div class="main-story">
-        <div class="story-heading">
-            <p>ABOUT US</p>
-            <h2>
-                <span>Let Us</span>
-                "Tell You Our Story"
-            </h2>
-            <img src="./assets/images/image 41.png" alt="image">
+            <div class="story-heading">
+                <p>ABOUT US</p>
+                <h2>
+                    <span>Let Us</span>
+                    "Tell You Our Story"
+                </h2>
+                <img src="./assets/images/image 41.png" alt="image">
 
-            <div class="story-paragraph">
-               <p>The AgriMech aim to address the community's lack of access to modern farm equipment, thereby boosting agricultural productivity and economic growth.</p>
-               <button>READ MORE</button>
+                <div class="story-paragraph">
+                    <p>The AgriMech aim to address the community's lack of access to modern farm equipment, thereby
+                        boosting agricultural productivity and economic growth.
+
+                        The digital platform provides affordable access to essential farm machinery, training, and
+                        maintenance services, promoting sustainable farming practices and broader economic and social
+                        benefits.</p>
+                    <button>READ MORE</button>
+                </div>
+
             </div>
-        
+
+            <div class="video-container">
+            <video width="320" height="240" controls>
+                <source src="./assets/images/video 1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+</section>
+
+<section>
+    <div class="other-section">
+        <div>
+            <img src="./assets/images/image 36.jpg" alt="image">
+            <div class="story-heading">
+                <p>ABOUT US</p>
+                <h2>
+                    <span>Let Us</span>
+                    "Tell You Our Story"
+                </h2>
+                <img src="./assets/images/image 41.png" alt="image">
         </div>
     </div>
-    </section>
-
-
+    
+</section>
 </body>
 
 </html>
